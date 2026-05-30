@@ -1,10 +1,10 @@
 from dotenv import load_dotenv
+from langchain.agents import create_agent
 
 load_dotenv()
 
-from langchain.agents import create_agent
 
-
+# get_weather function is used to get weather information for a given city
 def get_weather(city: str) -> str:
     """
     Get weather for a given city.
